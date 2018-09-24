@@ -10,8 +10,11 @@
         font-family: "Helvetica", "Arial", sans-serif;
         line-height: 1.5;
         padding: 4em 1em;
-        color: #4e5754;
+        color: #353b39;
         background-color: #ffa089;
+      }
+      h1 {
+        margin-left: 1.3em;
       }
       h2 {
         margin-top: 1em;
@@ -23,7 +26,7 @@
       img {
         border-radius: 30%;
       }
-      ul li a {
+      a {
         text-decoration: none;
         color: black;
       }
@@ -31,12 +34,39 @@
         padding: 5px;
         background-color: #c7b446;
       }
+      header {
+        background-image: url("img/logo_fatih.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 83%;
+      }
+      header img, nav {
+        display: inline-block;
+        vertical-align: text-top;
+      }
+      header nav ul li {
+        margin-top: 1.5em;
+        margin-left: 1em;
+      }
+      main section {
+        display: inline-block;
+        vertical-align: top;
+        width: 49%;
+      }
+      main section:first-child{
+        width: 100%;
+      }
+      footer nav, section {
+        display: inline-block;
+        vertical-align: top;
+        width: 49%;
+      }
     </style>
 </head>
 <body>
 <header>
-    <h1>Fatih Bulbul</h1>
-    <img src="img/profile.jpeg" width="150" alt="GitHub Picture"/>
+    <h1><a href="">Fatih Bulbul</a></h1>
+    <img src="img/profile.jpeg" width="150" alt="Profile Picture"/>
     <nav>
         <ul>
             <li><a href="#summary">Summary</a></li>
@@ -53,7 +83,7 @@
             <h2>Summary</h2>
             <p>A <strong>electronics and communications engineer</strong> with 10+ years experience in <i>student</i>.
               Who lives to his life like tetris. Chess felt right in the first place but only way to master life is to
-              learn to play with the same self-control at the highest speeds, like playing tetris :) <i>(citation)</i> </p>
+              learn to play with the same self-control at the highest speeds, <strong>like playing tetris</strong> :) <i>(citation)</i> </p>
         </section>
         <section id="work">
             <h2>Work</h2>
@@ -110,8 +140,8 @@
     </article>
 </main>
 <footer>
-    <h2>Social</h2>
     <nav>
+      <h2>Social</h2>
         <ul>
             <li><a id="medium" href="https://medium.com/@fatiihbulbul">Medium</a></li>
             <li><a id="github" href="http://github.com/fatiihbulbul">GitHub</a></li>
